@@ -1,2 +1,2 @@
-# pyton-projects
+# python-projects
 This is a repository for various python projects.
