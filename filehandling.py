@@ -16,6 +16,14 @@ class fileHandle():
 		# print(self.contents)
 		file.close()
 
+	def write(self, contents):
+		file = open(self.filename, 'w')
+		file.write(contents)
+		file.close()
+
+	def setFilename(self, filename):
+		self.filename = filename
+
 	def getContents(self):
 		return self.contents
 
@@ -26,4 +34,9 @@ class fileHandle():
 link = fileHandle("notes.txt")
 link.read()
 linkval = link.getContents()
-print(linkval)
+
+# track = fileHandle(linkval)
+# track.read()
+# trackval = track.getContents()
+# track.setFilename("list.txt")
+# track.write(trackval)
