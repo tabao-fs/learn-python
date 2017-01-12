@@ -6,7 +6,7 @@ Additional Comments:
 This is a python 3 implementation.
 '''
 
-class fileHandle():
+class FileHandle():
 	def __init__(self, filename):
 		self.filename = filename
 
@@ -31,11 +31,11 @@ class fileHandle():
 		print('\n'.join('{}: {}'.format(*k) for k in enumerate(list)))
 		print("Length: ",(length))
 
-link = fileHandle("notes.txt")
+link = FileHandle("notes.txt")
 link.read()
 linkval = link.getContents()
 
-# track = fileHandle(linkval)
+# track = FileHandle(linkval)
 # track.read()
 # trackval = track.getContents()
 # track.setFilename("list.txt")
